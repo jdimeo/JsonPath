@@ -232,7 +232,7 @@ public class JsonPath {
             if (optSuppressExceptions) {
                 return handleMissingPathInContext(configuration);
             } else {
-                throw new PathNotFoundException();
+                throw new PathNotFoundException(path.toString());
             }
         }
         for (PathRef updateOperation : evaluationContext.updateOperations()) {
@@ -260,7 +260,7 @@ public class JsonPath {
             if (optSuppressExceptions) {
                 return handleMissingPathInContext(configuration);
             } else {
-                throw new PathNotFoundException();
+                throw new PathNotFoundException(path.toString());
             }
         }
         for (PathRef updateOperation : evaluationContext.updateOperations()) {
@@ -287,7 +287,7 @@ public class JsonPath {
             if (optSuppressExceptions) {
                 return handleMissingPathInContext(configuration);
             } else {
-                throw new PathNotFoundException();
+                throw new PathNotFoundException(path.toString());
             }
         }
         for (PathRef updateOperation : evaluationContext.updateOperations()) {
@@ -314,7 +314,7 @@ public class JsonPath {
             if (optSuppressExceptions) {
                 return handleMissingPathInContext(configuration);
             } else {
-                throw new PathNotFoundException();
+                throw new PathNotFoundException(path.toString());
             }
         }
         for (PathRef updateOperation : evaluationContext.updateOperations()) {
@@ -343,7 +343,7 @@ public class JsonPath {
             if (optSuppressExceptions) {
                 return handleMissingPathInContext(configuration);
             } else {
-                throw new PathNotFoundException();
+                throw new PathNotFoundException(path.toString());
             }
         }
         for (PathRef updateOperation : evaluationContext.updateOperations()) {
