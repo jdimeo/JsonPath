@@ -16,9 +16,6 @@ package com.jayway.jsonpath;
 
 public class PathNotFoundException extends InvalidPathException {
 
-    public PathNotFoundException() {
-    }
-
     public PathNotFoundException(String message) {
         super(message);
     }
